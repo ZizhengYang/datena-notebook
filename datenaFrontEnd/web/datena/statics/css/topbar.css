@@ -1,0 +1,40 @@
+/********************************************************
+        COLOR SETTINGS
+********************************************************/
+.black-bg {
+    background: #22242a;
+    border-bottom: 1px solid #393d46;
+}
+
+/********************************************************
+        THE APP BAR, FOR GENERAL USE
+********************************************************/
+.apptopbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1002;
+}
+
+.apptitle {
+    font-size: 24px;
+    color: #f2f2f2;
+    float: left;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.apptitle span {
+    color: #4ECDC4;
+}
+
+/********************************************************
+        THE CONSTRUCT NOTE EDITOR TOP BAR
+********************************************************/
+
+.apptopbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1002;
+}
