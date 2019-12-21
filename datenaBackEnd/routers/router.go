@@ -8,21 +8,35 @@
 package routers
 
 import (
-	controllers2 "datenaBackEnd/datenaBackEnd/controllers"
+	//controllers2 "datenaBackEnd/datenaBackEnd/controllers"
+	//"github.com/astaxie/beego"
 	"github.com/astaxie/beego"
 )
 
 func init() {
-	ns := beego.NewNamespace("/v1",
+	//ns := beego.NewNamespace("/v1",
+	//	beego.NSNamespace("/object",
+	//		beego.NSInclude(
+	//			//&controllers2.ObjectController{},
+	//		),
+	//	),
+	//	beego.NSNamespace("/user",
+	//		beego.NSInclude(
+	//			//&controllers2.UserController{},
+	//		),
+	//	),
+	//)
+	note := beego.NewNamespace("/note",
 		beego.NSNamespace("/object",
 			beego.NSInclude(
-				&controllers2.ObjectController{},
+
 			),
 		),
 		beego.NSNamespace("/user",
 			beego.NSInclude(
-				&controllers2.UserController{},
+
 			),
 		),
 	)
+	beego.AddNamespace(note)
 }
